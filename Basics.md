@@ -44,3 +44,7 @@ The process-
 To install `npm i -g @angular/cli`
 to check if installed `ng version`
 `ng help` to view the options that ng cli can perform.
+
+## 0005 Latest Version Of Angular
+
+Upgrading angular to latest version is easy, the official angular update page gives straight forward instruction to upgrade angular version.[Angular update instruction](https://update.angular.io/).As long as the upgrade command says **Migration complete** then the upgrade is done.
