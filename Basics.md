@@ -48,3 +48,13 @@ to check if installed `ng version`
 ## 0005 Latest Version Of Angular
 
 Upgrading angular to latest version is easy, the official angular update page gives straight forward instruction to upgrade angular version.[Angular update instruction](https://update.angular.io/).As long as the upgrade command says **Migration complete** then the upgrade is done.
+
+## 0006 Creating a New Application
+
+`ng new` command create new angular project, but before using it we can get the command help file and read it so we can understand better. We can see that the `ng new` command have a required argument is name, and has other optional argument or options. There is an option `--skip-tests` or `-S`, it will not generate any test files or `spec.ts` files. Since this course will not cover test so we can use it to skip generating test files.
+steps:
+
+1. `ng new basics -S` create new project named basics with test file generation skipped.
+2. use router: no, will discussed later
+3. style, css.
+   Then will generate the new angular project
