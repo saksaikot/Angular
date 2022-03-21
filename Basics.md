@@ -128,3 +128,7 @@ The module AppModule was bootstrapped, but it does not declare "@NgModule.bootst
 ```
 
 So it is telling like the main entry file is calling bootstrap but there is no bootstrap is defined here. It will sort out in next video.
+
+## 0016 Understanding Components
+
+Components are like custom html tag, angular help us to teach browser new tag, and then we can reuse these custom tag,We can add view and behavior to custom tag, component can use other component as well, we have given a component when we use `ng new` to create the project, this component is `src->app->app.components.ts`, we will learn more on component on next video.
