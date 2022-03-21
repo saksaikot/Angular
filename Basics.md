@@ -93,3 +93,15 @@ So in JIT the compilation is done in browser and the size of it large and takes 
 ## 0011 Loading a Platform
 
 Angular needs to know which platform it will run and which compilation strategy it will use. Since our app will run in web we will use the browser but there are two platform browser `platformBrowser` for `AOT` and `platformBrowserDynamic` for `JIT`, So we should use the `platformBrowser` but Angular recommend to use `platformBrowserDynamic` and it will automatically choose AOT compiler for us and with the option to switch to `JIT`, we will import `platformBrowserDynamic` from `@angular/platform-browser-dynamic`.
+
+## 0012 Bootstrapping Angular
+
+when we call `platformBrowserDynamic` it will load angular and now we need to give an entry module that will run, we have a default module `AppModule` which was created with `ng new ` command, we will chain the call `platformBrowserDynamic().bootstrapModule(AppModule)` and it return a promise so we need to catch it `.catch(console.error)`
+so the final code will be,
+
+```ts
+import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
+import { AppModule } from "./app/app.module";
+
+platformBrowserDynamic().bootstrapModule(AppModule).catch(console.error);
+```
