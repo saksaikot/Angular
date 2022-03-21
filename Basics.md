@@ -113,3 +113,7 @@ the structure of environments file, there are two files- -`environments.ts`
 
 - `environments.prod.ts`: when angular cli build the project it will auto replace `environments` with `environments.prod.ts`, the configuration is given in `angular.json` ->project-name-> architecture->`fileReplacements`
   **Note: `enableProdMode` needs to place before bootstrapping the module.**
+
+## 0014 Understanding Modules
+
+Module in angular is like superset of js modules, it works like js module but solve some more problems, we can make related component under one module, and the imports in module will be available in there component.We make modules by features, related components are under single module.
