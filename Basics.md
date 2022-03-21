@@ -183,3 +183,7 @@ files and folder under `src`
 - `assets`:There is a folder under app, `assets` where we keep files like, image and font it will be compiled and include in final build.
 - `polyfills.ts`: this file is for giving support for older browser which don't have latest feature.
 - `styles`: This is where we write our global style, css are declare here will apply globally.
+
+# 03. TypeScript - Optional
+
+[Read here](./TypeScripts/readme.md)
