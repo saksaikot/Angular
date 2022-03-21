@@ -64,3 +64,14 @@ steps:
 `ng serve` will start the server with development feature and looks for the change of file and if change happen then it will automatically reflect the changes.
 We can learn more on `ng serve` command by `ng serve --help`
 The development server is not production ready it helps to code. We need to build the project for a production build.
+
+## 0008 Reviewing the Configuration Files
+
+There are several config files at the root of the project
+
+- `.browserslistrc`: to tell angular which browsers need to be supported
+- `.editorconfig`: default editor settings so that if team works on a project then they get the same indentation and setting throughout all browser.this setting file will not work in vscode, we need a separate extension to make it work.
+- .`gitignore` the ignore file of git to tell git which file should not add to git
+- `.angular.json` angular configuration for default project, where we can manage multiple projects. there are also some cli configuration for building and testing the project through angular cli.
+- `karma.conf.js`: for testing the project
+- `tsconfig.json` these files are to set various config for typeScripts. The other two file extends the `tsconfig.json` file for the app and for the test file `tsconfig.spec.json`
