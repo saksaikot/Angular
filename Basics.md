@@ -105,3 +105,11 @@ import { AppModule } from "./app/app.module";
 
 platformBrowserDynamic().bootstrapModule(AppModule).catch(console.error);
 ```
+
+## 0013 Enabling Production Mode
+
+By default angular run the change detection in browser twice for better debugging opportunities. It is not good for production mode. We can change this behaviors by calling `enableProdMode` from `@angular/core`, but we want to run it conditionally only when we are on production mode, we can detect the mode from `src->environments->environments.ts`.
+the structure of environments file, there are two files- -`environments.ts`
+
+- `environments.prod.ts`: when angular cli build the project it will auto replace `environments` with `environments.prod.ts`, the configuration is given in `angular.json` ->project-name-> architecture->`fileReplacements`
+  **Note: `enableProdMode` needs to place before bootstrapping the module.**
