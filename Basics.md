@@ -161,3 +161,17 @@ import { AppComponent } from "./app.component";
 })
 export class AppModule {}
 ```
+
+## 0018 External Templates and Styles
+
+The MVC pattern in angular, We can refer then in angular like these-
+
+- Model: data
+- View: HTML/CSS
+- Controller: TypeScript Class
+
+in app component there are other properties,
+
+- template : `template`/`templateUrl`, `template` is inline value whereas `templateUrl` need to set the relative path of the html template, we can not use both properties we need to use only one property.
+- styles: like template, styles have two properties, `styles` and `styleUrls`, Name suggest that it will take the value as array and we can provide multiple css file or styles. Same as template we cannot use both we need to use only one.
+  Then we can change the html template and the style and we can see the changes in browser.
