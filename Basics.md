@@ -89,3 +89,7 @@ There are several config files at the root of the project
 **Just-In-Time Compilation**: Server(Source code)-> Browser:angular compiler->(`template`,`Services`,`modules`)-> Browser runs app.
 **Ahead-of-time Compilation**:server(Source code),angular compiler->browser runs app.  
 So in JIT the compilation is done in browser and the size of it large and takes longer time.And in AOT angular compiler run on server, and the process code is then passed to browser, which is smaller and run faster.Angular provides both AOT and JIT, AOT is new feature and is recommended to use it all the time.
+
+## 0011 Loading a Platform
+
+Angular needs to know which platform it will run and which compilation strategy it will use. Since our app will run in web we will use the browser but there are two platform browser `platformBrowser` for `AOT` and `platformBrowserDynamic` for `JIT`, So we should use the `platformBrowser` but Angular recommend to use `platformBrowserDynamic` and it will automatically choose AOT compiler for us and with the option to switch to `JIT`, we will import `platformBrowserDynamic` from `@angular/platform-browser-dynamic`.
