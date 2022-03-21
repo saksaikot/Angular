@@ -83,3 +83,9 @@ There are several config files at the root of the project
 - Load the angular code
 - Load the app code
   To learn more we will delete all the codes in main.ts and will rewrite from stretch.
+
+## 0010 AOT Compilation
+
+**Just-In-Time Compilation**: Server(Source code)-> Browser:angular compiler->(`template`,`Services`,`modules`)-> Browser runs app.
+**Ahead-of-time Compilation**:server(Source code),angular compiler->browser runs app.  
+So in JIT the compilation is done in browser and the size of it large and takes longer time.And in AOT angular compiler run on server, and the process code is then passed to browser, which is smaller and run faster.Angular provides both AOT and JIT, AOT is new feature and is recommended to use it all the time.
