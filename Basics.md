@@ -117,3 +117,14 @@ the structure of environments file, there are two files- -`environments.ts`
 ## 0014 Understanding Modules
 
 Module in angular is like superset of js modules, it works like js module but solve some more problems, we can make related component under one module, and the imports in module will be available in there component.We make modules by features, related components are under single module.
+
+## 0015 Creating Modules
+
+First clean up the `app.module.ts` file then write it from scratch, first we define the class `export class AppModule{}`, then we need to add decorative. Decorative are the way of adding metadata.`NgModule` decorative is for providing metadata for class. here we can write which module or component we can import. our code will run inside browser so we need to import `BrowserModule`, importing here it will allow the components under it will have same api access. At this point we will see that the browser output is empty and if we inspect then we will see below error message
+
+```txt
+The module AppModule was bootstrapped, but it does not declare "@NgModule.bootstrap"
+
+```
+
+So it is telling like the main entry file is calling bootstrap but there is no bootstrap is defined here. It will sort out in next video.
