@@ -58,3 +58,9 @@ steps:
 2. use router: no, will discussed later
 3. style, css.
    Then will generate the new angular project
+
+## 0007 Starting the server
+
+`ng serve` will start the server with development feature and looks for the change of file and if change happen then it will automatically reflect the changes.
+We can learn more on `ng serve` command by `ng serve --help`
+The development server is not production ready it helps to code. We need to build the project for a production build.
