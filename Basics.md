@@ -75,3 +75,11 @@ There are several config files at the root of the project
 - `.angular.json` angular configuration for default project, where we can manage multiple projects. there are also some cli configuration for building and testing the project through angular cli.
 - `karma.conf.js`: for testing the project
 - `tsconfig.json` these files are to set various config for typeScripts. The other two file extends the `tsconfig.json` file for the app and for the test file `tsconfig.spec.json`
+
+## 0009 Main Entry File
+
+`project_root->src->main.ts` has two responsibility.
+
+- Load the angular code
+- Load the app code
+  To learn more we will delete all the codes in main.ts and will rewrite from stretch.
