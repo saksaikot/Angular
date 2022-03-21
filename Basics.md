@@ -175,3 +175,11 @@ in app component there are other properties,
 - template : `template`/`templateUrl`, `template` is inline value whereas `templateUrl` need to set the relative path of the html template, we can not use both properties we need to use only one property.
 - styles: like template, styles have two properties, `styles` and `styleUrls`, Name suggest that it will take the value as array and we can provide multiple css file or styles. Same as template we cannot use both we need to use only one.
   Then we can change the html template and the style and we can see the changes in browser.
+
+## 0019 Everything else
+
+files and folder under `src`
+
+- `assets`:There is a folder under app, `assets` where we keep files like, image and font it will be compiled and include in final build.
+- `polyfills.ts`: this file is for giving support for older browser which don't have latest feature.
+- `styles`: This is where we write our global style, css are declare here will apply globally.
