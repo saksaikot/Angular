@@ -132,3 +132,32 @@ So it is telling like the main entry file is calling bootstrap but there is no b
 ## 0016 Understanding Components
 
 Components are like custom html tag, angular help us to teach browser new tag, and then we can reuse these custom tag,We can add view and behavior to custom tag, component can use other component as well, we have given a component when we use `ng new` to create the project, this component is `src->app->app.components.ts`, we will learn more on component on next video.
+
+## 0017 Creating Components
+
+same as module we need to use decorative, for component we use `Component` from `@angular/core`, the properties needed for a component are, selector and template, template is html tags and selector is custom tag, must be all lowercase and only use `-` minus, with all of these our `app.component.ts` will be-
+
+```ts
+import { Component } from "@angular/core";
+
+@Component({
+  selector: "app-root",
+  template: "<h1> Hello world",
+})
+export class AppComponent {}
+```
+
+with our component is done now we can complete our `AppModule`,Since `AppModule` is a root Module, for root module we need to provide bootstrap property, and the value will be our main component, to import the components we need to add them inside declarations, so the final AppModule will be,
+
+```ts
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
+import { AppComponent } from "./app.component";
+
+@NgModule({
+  imports: [BrowserModule],
+  declarations: [AppComponent],
+  bootstrap: [AppComponent],
+})
+export class AppModule {}
+```
