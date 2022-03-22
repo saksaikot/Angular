@@ -30,3 +30,15 @@ when we annotate the data type we will no longer pass other data types other tha
 ## 0023 Variables
 
 Typescript supports all primitive types:`string`,`number`,`boolean`,`null`,`undefined`. Typescript can auto infer the data type if it is assigned when the variable is declared. We should use this feature, but if variable is not initialize then we need to type annotate. thats why we need to type annotate the parameters of function because the initial value is not set, and typescript will set the data type to any.
+
+## 0024 Union Types
+
+We may need more than one data type, like we will assign the value from api and initialize with null, we can do this with union operator, `|` using this pipe operator we can annotate multiple data type. Example -
+
+```ts
+const myName:string:null=null;
+function addShipping():number|boolean{
+if(error) return false;
+return number;
+}
+```

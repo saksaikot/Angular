@@ -1,4 +1,4 @@
-function addShipping(price: number, shipping: number): number {
+function addShipping(price: number, shipping: number): number | boolean {
   return price + shipping;
 }
 

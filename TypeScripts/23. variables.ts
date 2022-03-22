@@ -1,1 +1,1 @@
-const myName = "";
+const myName: string | null = null;
