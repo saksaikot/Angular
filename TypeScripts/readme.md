@@ -139,3 +139,40 @@ const numberQueue = new Queue<number>();
 numberQueue.add(5);
 numberQueue.add(10);
 ```
+
+## 0030 Why Decorators, 0031 TypeScript Configuration, 0032 Writing Decorators
+
+Decorators are experiment feature, it add extra attribute and methods to class or functions, we can use typescript to access this experiment feature, we can init the typescript config file `npx tsc --init` and use this option ` "compilerOptions": { "experimentalDecorators": true }`, decorator example
+we accept the target as function, classes are function, then we add it before the class with `@` symbol
+
+```ts
+function Items(target: Function) {
+  target.prototype.id = "abc";
+}
+
+@Items
+class Pizza {
+  id: string;
+}
+
+const pizza = new Pizza();
+```
+
+we can also accept additional arguments to make it more dynamic,
+NOTE:` return (target: Function) => { target.prototype.id = id; }` this is good but `return (target: Function) => target.prototype.id = id; ` will not work. without argument `@Items\nclass className` with argument `@Items(arguments)\nclass className`
+
+```ts
+function Items(id: string) {
+  return (target: Function) => {
+    target.prototype.id = id;
+  };
+}
+
+@Items("hello")
+class Burger {
+  id: string;
+}
+
+const burger = new Burger();
+console.log(burger.id);
+```
