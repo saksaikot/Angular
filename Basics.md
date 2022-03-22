@@ -187,3 +187,20 @@ files and folder under `src`
 # 03. TypeScript - Optional
 
 [Read here](./TypeScripts/readme.md)
+
+# 04. Component Fundamentals
+
+## 0033 Interpolation
+
+Expression are one line statement that can produce output. We can write expression within `{{expression}}`. The expression and interpolation example `The expression {{name}} is interpolated into John`. Now we can move into writing our basic example file `app.components.ts`, we will add name='Luis' to our class.
+and the template we can use it with `{{}}`. Example `app.component.html`-
+
+```html
+<h1>Hello {{name}}</h1>
+<!-- <h1 {{name}}>Hello </h1> -->
+
+{{getName()}}
+```
+
+**Note:the `{{}}` can not be used in attribute, No need this keyword**
+Also it will be helpful to add `Angular Language Service`, it will give insight of variable and methods of its class file.
