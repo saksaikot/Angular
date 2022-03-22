@@ -76,3 +76,28 @@ const account: {
 
 const accounts: {}[] = [{}];
 ```
+
+## 0027 Interfaces
+
+interface help us create clean and more structured code, for example the object type annotation, we have one portion for type annotation and then the object, it may look some time confusing, and another thing we cannot reuse it, but with interface it is possible. the syntax is `interface 'PascalCaseInterfaceName 'Data annotation';`, for convenient we add the latter `I` before the name of interface so that other can easily recognize.example-
+
+```ts
+//interface
+interface IAccount {
+  name: string;
+  balance: number;
+  status?: boolean;
+  deposit?: (amount: number) => number;
+}
+const accountNew: IAccount = {
+  name: "doe",
+  balance: 15,
+};
+
+const accountsNew: IAccount[] = [
+  {
+    name: "doe",
+    balance: 15,
+  },
+];
+```

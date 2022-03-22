@@ -15,3 +15,22 @@ const account: {
 };
 
 const accounts: {}[] = [{}];
+
+//interface
+interface IAccount {
+  name: string;
+  balance: number;
+  status?: boolean;
+  deposit?: (amount: number) => number;
+}
+const accountNew: IAccount = {
+  name: "doe",
+  balance: 15,
+};
+
+const accountsNew: IAccount[] = [
+  {
+    name: "doe",
+    balance: 15,
+  },
+];
