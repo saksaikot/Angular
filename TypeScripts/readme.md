@@ -46,6 +46,7 @@ return number;
 ## 0025 Arrays
 
 we can annotate an array with the data type and `[]` ie:
+
 ```ts
 let items=[1,2]
 //or
@@ -54,7 +55,24 @@ or
 let items: number[]=[]
 or
 number[]|string[]
-or 
+or
 (number|string)[]
 
+```
+
+## 0026 Objects
+
+object annotation is same like the object itself, `{name:string}`, we can also mention if a property is optional, with a `?` sing after property name, we can also annotate array of objects.
+
+```ts
+const account: {
+  name: string;
+  balance: number;
+  status?: boolean;
+} = {
+  name: "doe",
+  balance: 15,
+};
+
+const accounts: {}[] = [{}];
 ```
