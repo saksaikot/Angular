@@ -14,3 +14,8 @@ function addShipping(price, shipping) {
 
 addShipping("10", 5);
 ```
+
+## 0021 Installing TypeScript
+
+From official doc
+to install on project `npm i -D typescript` or with `--save-dev` typescript provide the binary tsc, typescript compiler with can access it through `npx tsc fileName`, this command will process ts file and produce js file
