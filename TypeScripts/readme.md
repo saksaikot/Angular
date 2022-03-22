@@ -101,3 +101,16 @@ const accountsNew: IAccount[] = [
   },
 ];
 ```
+
+## 0028 Classes
+
+We use interface with classes with implements keyword, then we need to have our name and balance variable, we can accept the variable in constructor function with public keyword, or we can initiate the variable at top of the class, both are the same, we use private keyword to block access the method outside of the class.Example -
+
+```ts
+class InvestmentAccount implements IAccount {
+  name;
+  balance;
+  // constructor(public name, public balance) {}
+  private withdraw() {}
+}
+```

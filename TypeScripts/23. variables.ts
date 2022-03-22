@@ -34,3 +34,12 @@ const accountsNew: IAccount[] = [
     balance: 15,
   },
 ];
+
+//classes
+
+class InvestmentAccount implements IAccount {
+  name;
+  balance;
+  // constructor(public name, public balance) {}
+  private withdraw() {}
+}
