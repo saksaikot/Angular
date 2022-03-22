@@ -114,3 +114,28 @@ class InvestmentAccount implements IAccount {
   private withdraw() {}
 }
 ```
+
+## 0029 Generics
+
+Generics are data type placeholder, it use `<T>` angle syntax, this T will be replaced when it is used, the variable can be anything but it a convention to use `T` for type. Example
+
+```ts
+class Queue<T> {
+  private data: T[] = [];
+
+  add(item: T) {
+    this.data.push(item);
+  }
+  remove() {
+    this.data.shift();
+  }
+}
+
+const nameQueue = new Queue<string>();
+nameQueue.add("Rahim");
+nameQueue.add("karim");
+
+const numberQueue = new Queue<number>();
+numberQueue.add(5);
+numberQueue.add(10);
+```
