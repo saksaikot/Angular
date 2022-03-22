@@ -42,3 +42,19 @@ if(error) return false;
 return number;
 }
 ```
+
+## 0025 Arrays
+
+we can annotate an array with the data type and `[]` ie:
+```ts
+let items=[1,2]
+//or
+let items=[1,'value']
+or
+let items: number[]=[]
+or
+number[]|string[]
+or 
+(number|string)[]
+
+```
