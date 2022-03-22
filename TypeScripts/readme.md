@@ -26,3 +26,7 @@ Type annotation is a way of describing data type. Then it will strictly maintain
 
 to annotate the type we write : then the type ie: `price:number` type annotation use lowercase of primitive data type name.
 when we annotate the data type we will no longer pass other data types other than number, if we try to pass it will show error and the code will not compile. we can also set the return type of a function same as variable with colon,`:` after `)`, `function name():number`, then we must return a value from this function, this ensure we write the intended code.
+
+## 0023 Variables
+
+Typescript supports all primitive types:`string`,`number`,`boolean`,`null`,`undefined`. Typescript can auto infer the data type if it is assigned when the variable is declared. We should use this feature, but if variable is not initialize then we need to type annotate. thats why we need to type annotate the parameters of function because the initial value is not set, and typescript will set the data type to any.
