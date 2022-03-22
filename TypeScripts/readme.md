@@ -19,3 +19,10 @@ addShipping("10", 5);
 
 From official doc
 to install on project `npm i -D typescript` or with `--save-dev` typescript provide the binary tsc, typescript compiler with can access it through `npx tsc fileName`, this command will process ts file and produce js file
+
+## 0022 Type Annotations
+
+Type annotation is a way of describing data type. Then it will strictly maintain the data type.
+
+to annotate the type we write : then the type ie: `price:number` type annotation use lowercase of primitive data type name.
+when we annotate the data type we will no longer pass other data types other than number, if we try to pass it will show error and the code will not compile. we can also set the return type of a function same as variable with colon,`:` after `)`, `function name():number`, then we must return a value from this function, this ensure we write the intended code.

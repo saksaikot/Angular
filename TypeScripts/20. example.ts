@@ -1,5 +1,5 @@
-function addShipping(price, shipping) {
-  console.log(price + shipping);
+function addShipping(price: number, shipping: number): number {
+  return price + shipping;
 }
 
-addShipping("10", 5);
+addShipping(10, 5);
